@@ -1,0 +1,62 @@
+/* General Styling */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+/* Header Styling */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 80px;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+/* Grid Styling */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px 20px; /* Vertical and Horizontal spacing */
+}
+
+.grid-item {
+    text-decoration: none;
+    color: inherit;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(20%); /* Optional: matches that soft look */
+    transition: opacity 0.3s;
+}
+
+.grid-item:hover img {
+    opacity: 0.8;
+}
+
+.caption {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #666;
+}
